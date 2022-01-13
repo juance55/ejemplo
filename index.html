@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejemplo de Realidad Virtual</title>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 </head>
-<body>
-    <a-scene arjs>
+<body style="margin: 0px; overflow: hidden;" >
+    <a-scene arjs embedded arjs="debugUIEnabled: false;" vr-mode-ui="enabled: false">
         <a-marker preset="hiro">
-            <a-entity position="0 1 0" scale="0.1 0.1 0.1">
-            <a-entity position="0 0 0" scale="5 5 5" gltf-model= "https://raw.githubusercontent.com/juance55/ejemplo/master/Casa.glb">
-            </a-entity> 
+            <a-entity position="0 1.5 0" scale="0.1 0.1 0.1">
+            <a-entity position="0 0 0" scale="15 15 15" gltf-model="https://raw.githubusercontent.com/juance55/ejemplo/master/barco.glb">
+            </a-entity > 
         </a-marker>
         <a-entity camera position="0 0 0"></a-entity>
     </a-scene>
